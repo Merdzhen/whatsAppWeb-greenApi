@@ -172,7 +172,7 @@ const Main = () => {
     setConnected(true);
   };
 
-  console.log(uniqueChats, currentChatId, idInstance, messages);
+  // console.log(uniqueChats, currentChatId, idInstance, messages);
 
   if (!connected) {
     return (
