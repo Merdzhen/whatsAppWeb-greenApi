@@ -72,7 +72,7 @@ const Main = () => {
       axios
         .get(apiUrl)
         .then((respGet) => {
-          // console.log("respGet", respGet);
+          console.log("respGet", respGet);
           // deletes notification by receiptId (creates ability to receive the new one)
           if (respGet.data?.receiptId) {
             const apiUrlDelete = `https://api.green-api.com/waInstance${idInstance}/deleteNotification/${apiTokenInstance}/${respGet.data.receiptId}`;
