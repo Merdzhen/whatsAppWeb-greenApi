@@ -1,0 +1,28 @@
+.message , 
+.myMessage {
+  width: fit-content;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 3px;
+}
+
+.quote ,
+.main {
+  padding: 8px;
+}
+
+.myMessage {
+  background-color: rgb(217, 253, 211);
+  align-self: flex-end;
+  .quote {
+    background-color: rgb(191, 239, 184);
+  }
+}
+
+.message {
+  background-color: rgb(255, 255, 255);
+  .quote {
+    background-color: rgb(233, 239, 239);
+  }
+}
+

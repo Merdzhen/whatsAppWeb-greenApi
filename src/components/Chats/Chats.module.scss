@@ -1,0 +1,31 @@
+.chats {
+  padding: 5px;
+  height: 100vh;
+  width: 30vw;
+  overflow-y: scroll;
+}
+
+.chat ,
+.chatActive {
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chat  {
+  background-color: hsl(0, 43%, 99%);
+}
+
+.chatActive {
+  background-color: rgb(217, 253, 211);
+}
+
+.back {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.empty {
+  padding: 10px;
+}
