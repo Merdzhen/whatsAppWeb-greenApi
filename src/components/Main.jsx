@@ -141,7 +141,7 @@ const Main = () => {
   useEffect(() => {
     if (currentChatId === "" && uniqueChats[0]?.chatId) {
       setCurrentChatId(uniqueChats[0].chatId);
-    } else {
+    } else if (!uniqueChats[0]?.chatId) {
       setCurrentChatId('');
     }
   }, [uniqueChats]);
@@ -172,7 +172,7 @@ const Main = () => {
     setConnected(true);
   };
 
-  // console.log(uniqueChats, currentChatId, idInstance, messages);
+  console.log(uniqueChats, currentChatId, idInstance, messages);
 
   if (!connected) {
     return (
